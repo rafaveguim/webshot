@@ -105,7 +105,7 @@ casper.eachThen(optsList, function(response) {
     })
     .then(function() {
       var cr = findClipRect(opts, this);
-      this.capture(opts.file, cr);
+      this.capture(opts.file, cr, {quality: 100});
     });
 });
 
